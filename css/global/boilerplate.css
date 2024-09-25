@@ -1,0 +1,65 @@
+:root {
+  --color-blue-900: hsl(233, 54%, 16%);
+  --color-blue-600: hsl(234, 25%, 52%);
+  --color-pink-600: hsl(341, 92%, 62%);
+  --color-pink-300: hsl(341, 100%, 83%);
+  --color-grey: hsl(232, 10%, 56%);
+  --color-white: hsl(0, 0%, 100%);
+  --gradient-pink: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+  --gradient-purple: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main {
+  overflow-x: clip;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  max-width: 35ch;
+  color: var(--color-grey);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 4.955625rem;
+  transition: opacity 150ms ease-in-out;
+}
+
+@media (width >= 75em) {
+  .logo {
+    width: 6.9375rem;
+  }
+}
+
+.logo:hover {
+  opacity: 0.75;
+}

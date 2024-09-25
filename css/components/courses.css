@@ -1,0 +1,77 @@
+.courses {
+  background: linear-gradient(#fff, #f0f1ff 40%);
+  padding-block: 64px 80px;
+}
+
+.courses .wrapper {
+  display: grid;
+  row-gap: 60px;
+}
+
+.courses .block {
+  padding: 64px 32px 40px;
+  border-radius: 15px;
+}
+
+.courses .block.title {
+  padding: 32px;
+  background: var(--gradient-pink);
+  color: var(--color-white);
+}
+
+.courses h2 {
+  font-size: var(--fs-3);
+}
+
+.courses .course {
+  position: relative;
+  background: var(--color-white);
+  display: grid;
+  gap: 24px;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.courses img {
+  position: absolute;
+  top: 0;
+  translate: 32px -50%;
+}
+
+.courses h3 {
+  font-size: var(--fs-4);
+}
+
+.courses p {
+  font-size: var(--fs-5);
+  margin: 0;
+}
+
+.courses a {
+  font-size: var(--fs-7);
+  font-weight: 700;
+  color: var(--color-pink-600);
+  transition: opacity 150ms ease-in-out;
+  align-self: end;
+}
+
+.courses a:hover {
+  opacity: 50%;
+}
+
+@media (width >= 50.625em) {
+  .courses .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+
+  .courses .block.title {
+    padding-block-start: 64px;
+  }
+}
+
+@media (width >= 75em) {
+  .courses .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 84px 32px;
+  }
+}

@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+  </head>
+  <body>
+    <header class="header wrapper">
+      <a href="/">
+        <img class="logo" src="/assets/logo-dark.svg" alt="Skilled Home" width="111" height="28" />
+      </a>
+      <a href="" class="button dark"> Get Started</a>
+    </header>
 
-  Get Started
+    <main>
+      <section class="hero wrapper">
+        <div class="hero__text">
+          <h1>Maximize skill, minimize budget</h1>
+          <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+          <a href="" class="button pink">Get Started</a>
+        </div>
 
-  Maximize skill, minimize budget
+        <picture>
+          <source media="(min-width: 75em)" srcset="/assets/image-hero-desktop@2x.webp" width="2092" height="1876" />
+          <source media="(min-width: 50.625em)" srcset="/assets/image-hero-tablet@2x.webp" width="695" height="723" />
+          <img src="/assets/image-hero-mobile@2x.webp" width="870" height="818" alt="woman with coffee mug and laptop, with labels reading Members 29k, Course hours 1451" />
+        </picture>
+      </section>
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
+      <section class="courses">
+        <div class="wrapper">
+          <div class="block title">
+            <h2>Check out our most popular courses!</h2>
+          </div>
+          <div class="block course">
+            <img src="/assets/icon-animation.svg" alt="" width="56" height="56" />
+            <h3>Animation</h3>
+            <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+            <a href="">Get Started</a>
+          </div>
+          <div class="block course">
+            <img src="/assets/icon-design.svg" alt="" width="56" height="56" />
+            <h3>Design</h3>
+            <p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+            <a href="">Get Started</a>
+          </div>
+          <div class="block course">
+            <img src="/assets/icon-photography.svg" alt="" width="56" height="56" />
+            <h3>Photography</h3>
+            <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+            <a href="">Get Started</a>
+          </div>
+          <div class="block course">
+            <img src="/assets/icon-crypto.svg" alt="" width="56" height="56" />
+            <h3>Crypto</h3>
+            <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+            <a href="">Get Started</a>
+          </div>
+          <div class="block course">
+            <img src="/assets/icon-business.svg" alt="" width="56" height="56" />
+            <h3>Business</h3>
+            <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+            <a href="">Get Started</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  Get Started
-
-  Check out our most popular courses!
-
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
-
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
-
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
-
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
-
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
-
-  Get Started
-
-</body>
+    <footer class="footer">
+      <div class="wrapper">
+        <a href="/">
+          <img class="logo" src="/assets/logo-light.svg" alt="Skilled Home" width="111" height="28" />
+        </a>
+        <a href="" class="button purple"> Get Started</a>
+      </div>
+    </footer>
+  </body>
 </html>

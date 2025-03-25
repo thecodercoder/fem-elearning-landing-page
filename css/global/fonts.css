@@ -1,0 +1,36 @@
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/plus-jakarta-sans-v8-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/plus-jakarta-sans-v8-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* plus-jakarta-sans-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/plus-jakarta-sans-v8-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --fs-1: clamp(2.5rem, 0.4230769230769229rem + 4.102564102564102vw, 3.5rem);
+  --fs-2: clamp(2rem, 0.9615384615384615rem + 2.051282051282051vw, 2.5rem);
+  --fs-3: clamp(1.5rem, 0.46153846153846145rem + 2.051282051282051vw, 2rem);
+  --fs-4: clamp(1.25rem, 0.7307692307692307rem + 1.0256410256410255vw, 1.5rem);
+  --fs-5: 1.125rem;
+  --fs-6: clamp(0.875rem, 0.6153846153846154rem + 0.5128205128205128vw, 1rem);
+  --fs-7: 1.125rem;
+}
